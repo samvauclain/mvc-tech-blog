@@ -24,7 +24,7 @@ Post.init(
                 isURL: true
             }
         },
-        blog_content: {
+        post_content: {
             type: DataTypes.STRING,
             allowNull: false
         },

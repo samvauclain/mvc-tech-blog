@@ -79,7 +79,7 @@ router.get('/:id', (req, res) => {
 router.post('/', withAuth, (req, res) => {
   Post.create({
     title: req.body.title,
-    blog_content: req.body.blog_content,
+    post_content: req.body.post_content,
     post_url: req.body.post_url,
     user_id: req.session.user_id
   })
