@@ -1,25 +1,13 @@
-{{!-- <article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">{{title}}</a>
-    <span>({{format_url post_url}})</span>
-  </div>
-  <div class="meta">
-    {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-  </div>
-</article> --}}
 
-
- 
-    <div class="d-flex text-muted pt-3">
-      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+    <div class="text-muted pt-3 border-top">
+       <i class="fs-2 p-2 mx-2 bg-success text-light far fa-newspaper" style="float:left;"></i>
        
 
-      <p class="pb-3 mb-0 small lh-sm border-bottom">
-        <strong class="d-block text-gray-dark"><a href="{{post_url}}" target="_blank">{{title}}</a> by {{user.username}} on {{format_date created_at}}</strong>
-        Some representative placeholder content, with some information about this user. Imagine this being some sort of status update, perhaps?
-        {{vote_count}} {{format_plural "point" vote_count}}
-         <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-      </p>
+      <p class="pb-3 mb-0 small lh-sm">
+        <strong class="text-gray-dark">{{title}} by {{user.username}} on {{format_date created_at}}</strong>
+        <span class="d-block"> {{post_content}}</span>
+        <span class="d-block fst-italic fw-lighter mt-1"> - I am a follower of all things tech.  </span>      
+         
+         <span class="m-2 p-2 d-block"><a class="text-decoration-none" href="/post/{{id}}">View Post & {{comments.length}} {{format_plural "comment" comments.length}}</a></span>
+    
     </div> 

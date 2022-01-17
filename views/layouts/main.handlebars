@@ -22,7 +22,6 @@
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
         {{#if loggedIn}}<li><a href="/dashboard" class="nav-link px-2 link-dark">Dashboard</a></li>{{/if}}
       </ul>
 
@@ -32,7 +31,7 @@
         {{else}}
         <button type="button" class="btn btn-outline-primary me-2"><a class="text-decoration-none"
             href="/login">Login</a></button>
-        <button type="button" class="btn btn-primary"><a href="/login"></a>Sign-up</a></button>
+        {{!-- <button type="button" class="btn btn-primary"><a href="/login"></a>Sign-up</a></button> --}}
         {{/if}}
       </div>
     </header>
@@ -50,8 +49,8 @@
 
     {{{ body }}}
 
-    <footer class="px-2 mb-2">
-      Thanks for visiting!
+    <footer class="px-2 mb-2 bg-dark text-light p-3">
+      Thanks for visiting Vauclain Tech News!
     </footer>
   </div>
 
